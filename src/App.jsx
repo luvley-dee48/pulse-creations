@@ -1,11 +1,11 @@
 import React from 'react';
 
-// Layout component
-import Layout from './components/Layout';
+// Layout component - correct path based on your file structure
+import Layout from './Entities/Layout';
 
 // Home page components
 import FeaturedCreators from './components/home/FeaturedCreators';
-import HeroSection from './components/home/HeroSection';
+import HomeHeroSection from './components/home/HeroSection';
 import PlatformStats from './components/home/PlatformStats';
 import TrendingTokens from './components/home/TrendingTokens';
 
@@ -13,11 +13,11 @@ import TrendingTokens from './components/home/TrendingTokens';
 import ContactSection from './components/landing/ContactSection';
 import FAQSection from './components/landing/FAQSection';
 import FeaturesSection from './components/landing/FeaturesSection';
-import HeroSection as LandingHeroSection from './components/landing/HeroSection';
+import LandingHeroSection from './components/landing/HeroSection';
 import HowItWorks from './components/landing/HowItWorks';
 import InternetIdentityModal from './components/landing/InternetIdentityModal';
 import Navbar from './components/landing/Navbar';
-import PartnerSection from './components/landing/PartnerSection';
+import PartnersSection from './components/landing/PartnersSection'; // Fixed: was PartnerSection
 import TokenomicsSection from './components/landing/TokenomicsSection';
 import VideoSection from './components/landing/VideoSection';
 
@@ -44,7 +44,7 @@ function App() {
         <TrendingTokens />
         <FeaturedCreators />
         <TokenomicsSection />
-        <PartnerSection />
+        <PartnersSection />
         <VideoSection />
         <FAQSection />
         <ContactSection />
