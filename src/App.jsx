@@ -1,40 +1,40 @@
-import React from 'react';
+import React from "react";
 
 // Layout component - correct path based on your file structure
-import Layout from './Entities/Layout';
+import Layout from "./entities/Layout";
 
 // Home page components
-import FeaturedCreators from './components/home/FeaturedCreators';
-import HomeHeroSection from './components/home/HeroSection';
-import PlatformStats from './components/home/PlatformStats';
-import TrendingTokens from './components/home/TrendingTokens';
+import FeaturedCreators from "./components/home/FeaturedCreators";
+import HomeHeroSection from "./components/home/HeroSection";
+import PlatformStats from "./components/home/PlatformStats";
+import TrendingTokens from "./components/home/TrendingTokens";
 
 // Landing page components
-import ContactSection from './components/landing/ContactSection';
-import FAQSection from './components/landing/FAQSection';
-import FeaturesSection from './components/landing/FeaturesSection';
-import LandingHeroSection from './components/landing/HeroSection';
-import HowItWorks from './components/landing/HowItWorks';
-import InternetIdentityModal from './components/landing/InternetIdentityModal';
-import Navbar from './components/landing/Navbar';
-import PartnersSection from './components/landing/PartnersSection'; // Fixed: was PartnerSection
-import TokenomicsSection from './components/landing/TokenomicsSection';
-import VideoSection from './components/landing/VideoSection';
+import ContactSection from "./components/landing/ContactSection";
+import FAQSection from "./components/landing/FAQSection";
+import FeaturesSection from "./components/landing/FeaturesSection";
+import LandingHeroSection from "./components/landing/HeroSection";
+import HowItWorks from "./components/landing/HowItWorks";
+import InternetIdentityModal from "./components/landing/InternetIdentityModal";
+import Navbar from "./components/landing/Navbar";
+import PartnersSection from "./components/landing/PartnersSection"; // Fixed: was PartnerSection
+import TokenomicsSection from "./components/landing/TokenomicsSection";
+import VideoSection from "./components/landing/VideoSection";
 
 // Create components
-import CurveSelector from './components/create/CurveSelector';
-import FeeBreakdown from './components/create/FeeBreakdown';
-import TokenPreview from './components/create/TokenPreview';
+import CurveSelector from "./components/create/CurveSelector";
+import FeeBreakdown from "./components/create/FeeBreakdown";
+import TokenPreview from "./components/create/TokenPreview";
 
 // Market component
-import TokenGrid from './components/market/TokenGrid';
+import TokenGrid from "./components/market/TokenGrid";
 
 function App() {
   return (
     <div className="App">
       <Layout>
         {/* Your app content here */}
-        
+
         {/* Example usage of components: */}
         <Navbar />
         <LandingHeroSection />
@@ -48,14 +48,13 @@ function App() {
         <VideoSection />
         <FAQSection />
         <ContactSection />
-        
+
         {/* You can conditionally render these based on routes/state */}
         {/* <TokenGrid /> */}
         {/* <CurveSelector /> */}
         {/* <FeeBreakdown /> */}
         {/* <TokenPreview /> */}
         {/* <InternetIdentityModal /> */}
-        
       </Layout>
     </div>
   );

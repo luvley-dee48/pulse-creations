@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Token } from "@/entities/Token";
-import { User } from "@/entities/User";
+// import { Token } from "@/entities/Token";
+import  User  from "@/entities/User";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -25,9 +25,9 @@ import {
 import { useNavigate } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 
-import TokenPreview from "../components/create/TokenPreview";
-import CurveSelector from "../components/create/CurveSelector";
-import FeeBreakdown from "../components/create/FeeBreakdown";
+import TokenPreview from "../create/TokenPreview";
+import CurveSelector from "../create/CurveSelector";
+import FeeBreakdown from "../create/FeeBreakdown";
 
 export default function CreateToken() {
   const navigate = useNavigate();
