@@ -41,7 +41,7 @@ function App() {
         <FeaturesSection />
         <HowItWorks />
         <PlatformStats />
-        <TrendingTokens />
+        {/* <TrendingTokens /> */}
         <FeaturedCreators />
         <TokenomicsSection />
         <PartnersSection />
@@ -51,10 +51,10 @@ function App() {
 
         {/* You can conditionally render these based on routes/state */}
         {/* <TokenGrid /> */}
-        {/* <CurveSelector /> */}
+        <CurveSelector />
         {/* <FeeBreakdown /> */}
         {/* <TokenPreview /> */}
-        {/* <InternetIdentityModal /> */}
+        <InternetIdentityModal />
       </Layout>
     </div>
   );

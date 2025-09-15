@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 
 export default function TokenomicsSection() {
+  
   const tokenomics = [
     {
       icon: Users,
