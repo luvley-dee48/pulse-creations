@@ -6,7 +6,7 @@ import { createPageUrl } from "@/utils";
 
 import HeroSection from "../components/landing/HeroSection";
 import FeaturesSection from "../components/landing/FeaturesSection";
-import HowItWorksSection from "../components/landing/HowItWorksSection";
+import HowItWorksSection from "../components/landing/HowItWorks";
 import TokenomicsSection from "../components/landing/TokenomicsSection";
 import VideoSection from "../components/landing/VideoSection";
 import FAQSection from "../components/landing/FAQSection";
@@ -36,6 +36,11 @@ export default function Home() {
     setShowAuthModal(false);
   };
 
+  const handleCloseModal = () => {
+    setShowAuthModal(false);
+    setIsAuthenticating(false);
+  };
+
   return (
     <div className="min-h-screen bg-white overflow-hidden">
       <HeroSection onGetStarted={handleGetStarted} />
@@ -46,9 +51,10 @@ export default function Home() {
       <FAQSection />
       <ContactSection />
       
+      {/* Internet Identity Modal - Only show when needed */}
       <InternetIdentityModal 
         isOpen={showAuthModal}
-        onClose={() => setShowAuthModal(false)}
+        onClose={handleCloseModal}
         onAuthenticate={handleInternetIdentity}
         isLoading={isAuthenticating}
       />
